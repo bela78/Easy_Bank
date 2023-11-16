@@ -1,0 +1,240 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+:root {
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    width: 86%;
+    background-color: var(--VeryLightGray);
+}
+p, #poster{
+    color: var(--GrayishBlue);
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--White);
+    padding: 30px 0;
+}
+.logo{
+    margin: 20px;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+    padding: 0 150px;
+    
+}
+.menu li{
+    padding-left: 5px;
+    list-style: none;
+    width: 100%;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: small;
+    color: var(--GrayishBlue);
+}
+.boton-request{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+    border-width: 0px;
+    background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(43, 183, 218) 100%);
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin: 0;
+    font-weight: 600;
+}
+.boton-request:hover{
+    opacity: 0.8;
+}
+
+.boton-menu{
+    display: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.arriba{
+    background-color: var(--VeryLightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.arriba #izquierda{
+    align-items: center;
+    width: 40%;
+    transform: translateY(-95px);
+}
+#izquierda h1{
+    color: var(--DarkBlue);
+    padding-bottom: 31px;
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 200;
+}
+#izquierda p{
+    line-height: 1.6;
+    padding-bottom: 34px;
+    font-size: 16px;
+}
+.arriba #derecha{
+    width: 60%;
+    overflow: hidden;
+}
+#derecha .mockups{
+    width: 100%;
+    transform: translate(120px, -115px);
+    
+}
+#derecha{
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-position: top -260px right -470px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.medio{
+    transform: translateY(-200px);
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+.detalle h2{
+    padding-top: 30px;
+    color: var(--DarkBlue);
+    font-size: 35px;
+    padding-bottom: 25px;
+    font-weight: 100;
+}
+.detalle p{
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+.card #cards{
+    margin-right: 20px;
+}
+#cards img{
+    padding-bottom: 34px;
+}
+#cards h3{
+    padding-bottom: 28px;
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--DarkBlue);
+}
+#cards p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+.abajo h1{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-weight: 200;
+    font-size: 45px;
+    color: var(--DarkBlue);
+}
+#imagen{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+#imagen img{
+    width: 290px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 30px;
+}
+#articulo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+#articulo .articulos{
+    width: 270px;
+    margin: 0;
+}
+.articulos #poster{
+    font-size: 11px;
+    margin-left: 15px;
+    padding-bottom: 15px;
+}
+.articulos h6{
+    color: var(--DarkBlue);
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 15px;
+    padding-bottom: 15px;
+}
+.articulos p{
+    margin-left: 15px;
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+footer{
+    display: flex;
+    margin: 0;
+    background-color: var(--DarkBlue);
+    padding: 30px 20px;
+    align-items: center;
+}
+.footer-1{
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    text-align: center;
+}
+.logo{
+    margin: 0;
+}
+.logo .logo-img{
+    padding-bottom: 30px;
+    margin: 0;
+    width: 160px;
+}
+.redes{
+    display: flex;
+}
+.redes img{
+    padding-right: 10px;
+}
+ul{
+    padding: 0 27px 0 74px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    transform: translate(90px, -5px);
+}
+ul a{
+    text-decoration: none;
+    color: var(--LightGrayishBlue);
+    line-height: 2.5;
+}
+.footer-2{
+    margin: 0;
+}
+.footer-2 .boton-request{
+    transform: translate(540px, -20px);
+}
+.footer-2 p{
+    font-size: 15px;
+    transform: translate(460px, 13px);
+}
